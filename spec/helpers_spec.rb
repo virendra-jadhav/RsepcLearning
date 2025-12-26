@@ -11,6 +11,9 @@ class Dog
    end 
 end 
 
+
+
+
 describe Dog do 
    def create_and_walk_dog(good_or_bad)
       dog = Dog.new(good_or_bad)
