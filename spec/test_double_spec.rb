@@ -1,8 +1,8 @@
-class UserInstance
-  def name
-    "Virendra"
-  end
-end
+# class UserInstance
+#   def name
+#     "Virendra"
+#   end
+# end
 describe "test double specification" do
   it "double test" do
     user = double("User", name: "Virendra", admin?: true)
@@ -54,23 +54,23 @@ describe "test double specification" do
     allow(user).to receive(:name).and_return("Virendra")
 
   end
-  it "instance_method check" do
+  # it "instance_method check" do
 
-    user = instance_double("UserInstance")
-    allow(user).to receive(:naem)
+  #   user = instance_double("UserInstance")
+  #   allow(user).to receive(:name)
 
-    user.naem  # ← now verification happens
+  #   user.name  # ← now verification happens
 
-  end
+  # end
   
-  it "class double test" do
-    user_class = class_double("User")
+  # it "class double test" do
+  #   user_class = class_double("User")
 
-    allow(user_class).to receive(:find).with(1).and_return("fake user")
+  #   allow(user_class).to receive(:find).with(1).and_return("fake user")
 
-    expect(user_class.find(1)).to eq "fake user"
+  #   expect(user_class.find(1)).to eq "fake user"
 
-  end
+  # end
   it "spy test" do
     logger = spy("Logger")
 
