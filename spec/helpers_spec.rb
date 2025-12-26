@@ -5,7 +5,7 @@ class Dog
       @good_dog = good_or_not 
       @has_been_walked = false 
    end 
-   
+  
    def walk_dog 
       @has_been_walked = true 
    end 
